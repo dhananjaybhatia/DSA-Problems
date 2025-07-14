@@ -1,0 +1,47 @@
+Time Complexity: 
+- it has nothing to do with time.
+- it is used for large operations.
+
+Big O: 
+- means the upper bound or the worst case situation. 
+- For eg : i need maximum 10 mins to complete a task. This is the upper bound or the worst case to complete a task.
+
+# Constant Time Complexity or O(1): bascially means when you can finish a task in 1 go.
+ - For eg: if you want to calculate a sum of n numbers. 
+  - formula is - n(n+1)/2 and n is the length of array.
+   - always remember n is a constant number. It is fixed - could be 10, 11, 15 etc. its not changing again and again. That is the reason it is Constant Time Complexity.
+
+   BUT: if they say n could be greater than 10 and less than 100 which means it could be anything. Now in this situation it is NOT Contant Time Complexity.
+
+
+# Linear Time Complexity or Big"O(n)" : 
+ - meaning number of steps/operations = n.
+  - If number increases - number of operation increases.
+   - n is between 10 and 100. which means number of operations times value of n.
+
+# Quadratic Time Complexity or O(n^2):
+ - if there is a loop which runs from 0 - n and there is another nexted loop which also runs from o - n. In that situation n times n becomes n^2. 
+  - For eg  - outer loop iterates 1 time but inside nested loop say runs 5 times. Then again outer loop iterates to 2 then inside nested loop runs 5 times again.
+   - Therefore its called O n square.
+
+# Big O(log n)
+ - bascially operation reduces big time. It is the best situation.
+  - For eg - Binary Search - it is based on log(n): if there are 500 elements. first search will reduce the array into half and look for the outcome inside half. then reduce the half into another half.......
+
+# Exponential - very expensive and bad time Complexity.
+ - n raise to the power x
+  - for eg if n = 5 which means there should be 5 operation but to solve those operations x was 4 which means 5^4 which is 5 * 5* 5* 5 625 operations.
+
+
+# n Factorial Time Complexity: this is even worse than Exponential.
+ - if n = 5 then factorial of n = 120 - how: 5 * 4 * 3 * 2 * 1
+
+ Calculate Time Complexity: 
+
+ 1. if there are 3 parallel "For" loops are running - in that case n + n + n = 3n. But there is no value of the constant which is 3. Therefore time Complexity is "n", which is Big O(n)
+
+ 2. Loop within a loop - n * n which is n^2.
+
+ 3. there is one loop and also has a nexted loop. Also, there is another loop running in parallel. Now - loop within a loop is n^2. and parallel loop is n. now when we calculate n^2 + n - we only consider bigger n which in this case is n^2. Therefore, time Complexity is n^2.
+
+ 4. if you get an equation - 3n^2/2 + n.logn + n = simply remove all small n's. Now you are only left with with 3n^2/2. remove constants Therefore we are left with n^2.

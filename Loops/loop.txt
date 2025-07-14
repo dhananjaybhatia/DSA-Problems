@@ -1,0 +1,28 @@
+Different types of loops:
+
+1. For loop : Use when: You know the exact number of iterations (e.g., iterating by index).
+ - for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+2. While loop: Use when: You don’t know how many times to loop in advance, but have a condition.
+ - let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+
+3. For Of loop: Use when: Iterating over iterable items like arrays, strings, or sets.
+ - const nums = [10, 20, 30];
+for (const num of nums) {
+  console.log(num);
+}
+
+4. For In loop : Use when: Iterating over keys/properties of an object.
+ - const person = { name: "John", age: 30 };
+for (const key in person) {
+  console.log(key, person[key]);
+}
+
+5. For Each loop: Use case: Functional style loop for arrays; concise, but can’t break or continue
+ - array.forEach((item) => console.log(item));
