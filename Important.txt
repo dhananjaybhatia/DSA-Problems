@@ -1,0 +1,35 @@
+There are 8 such patterns which which repeat over and over again.
+
+1. Sliding Window Pattern: The sliding window pattern is a way to look at a part (or "window") of an array or string or linkList (linear data structure), and move that window one step at a time to find something — like a maximum, minimum, or specific condition — without starting over each time.
+
+2. Subset Pattern: The subset pattern is a technique used to generate all possible combinations (subsets) of a set (usually an array). It's often used in backtracking or recursion problems.
+
+3. Binary Search Pattern: The binary search pattern is used when you want to find an element (or the position of something) in a sorted array or range efficiently — by cutting the search space in half each time.
+
+4. Top K element Pattern: The Top K Elements Pattern is a powerful technique used to solve problems that ask for the k largest/smallest/frequent/closest/etc. elements from a collection.
+ * Data structure used:
+  - Min Heap (for keeping track of the k largest elements)
+  - Max Heap (for k smallest, or for getting highest values when values are negative or inverted)
+
+5. Binary Tree DFS: DFS (Depth-First Search) is a way to explore a binary tree by going as deep as possible down each path before backtracking. (usually we use recursion)
+ * You start at the root, 
+    - then go: as deep as you can to the left, 
+     - then to the right,
+      - or in a custom order depending on the type of DFS.
+
+6. Topological Sort: is a way to order the nodes of a Directed Acyclic Graph (DAG) such that for every directed edge u → v, node u comes before v in the ordering.
+
+7. Binary Tree BFS: Breadth-First Search (BFS) means visiting the tree level by level, from top to bottom and left to right within each level. It's also called Level Order Traversal.
+
+8. Two Pointer Pattern: The two pointer pattern uses two variables (pointers) to scan through a list, usually from:
+ - opposite ends (start and end),
+ - or one behind the other (sliding),
+ - to solve problems efficiently — usually in O(n) time instead of O(n²).
+
+* When is it used?: 
+ - Working with sorted arrays
+ - Finding pairs with a target sum
+ - Reversing arrays/strings
+ - Merging arrays
+ - Removing duplicates
+ - Palindrome checks
