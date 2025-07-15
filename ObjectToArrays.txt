@@ -1,0 +1,34 @@
+Object has keys and values like:
+    {"name" : "Micky", "age" : 27}
+
+Convert into an Array:
+
+1. Convert to array of key-value pairs : 
+    const obj = {"name" : "Micky", "age" : 27}
+    const arr = Object.entries(obj)
+    console.log(arr) = [["name" : "Micky"], ["age" : 27]]
+
+2. Convert to array of keys only :
+    const obj = {"name" : "Micky", "age" : 27}
+    const keys = Object.keys(obj)
+    console.log(keys) = ["name","age"]
+
+3. Convert to array of values only : 
+    const obj = {"name" : "Micky", "age" : 27}
+    const values = Object.values(obj)
+    console.log(values) = ["Micky",27]
+
+// using Map
+4. Custom structure (e.g., array of objects)
+    const obj = {"name" : "Micky", "age" : 27}
+    const arr = Object.entries(obj).map(([key, value]) => ({ key, value }));
+    console.log(arr) = [ { key: "name", value: "Micky" }, { key: "age", value: 27 } ]
+
+// using for...of loop
+4.1 Custom structure (e.g., array of objects)
+    const obj = {"name" : "Micky", "age" : 27}
+    
+    for(const [key, value] of Object.entries(obj)){
+        arr.push({key, value})
+    }
+    console.log(arr) =[ { key: "name", value: "Micky" }, { key: "age", value: 27 } ]
