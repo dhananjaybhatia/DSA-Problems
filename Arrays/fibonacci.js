@@ -10,5 +10,15 @@ function fibSeries(n) {
   return arr;
 }
 
-n = 6;
-console.log(fibSeries(n));
+n = 10;
+console.log(fibSeries(n)); //output is [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+
+//Recurrsion:
+
+function fibNumber(n) {
+  if (n <= 1) return n;
+
+  return fibNumber(n - 1) + fibNumber(n - 2);
+}
+
+console.log(fibNumber(10)); //output is 55
