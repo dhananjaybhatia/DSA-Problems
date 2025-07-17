@@ -22,3 +22,5 @@ function fibNumber(n) {
 }
 
 console.log(fibNumber(10)); //output is 55
+
+
