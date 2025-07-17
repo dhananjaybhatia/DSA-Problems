@@ -47,3 +47,20 @@ function isAnagram(s, t) {
 // }
 
 // testAnagramLog("caat");
+
+function twoSum(arr, t) {
+  if (arr.length < 2 || t < 1) return false;
+
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] + arr[j] !== t) {
+        j++;
+      } else {
+        return [i, j];
+      }
+    }
+  }
+}
+arr = [1, 2, 6];
+t = 3;
+console.log(twoSum(arr, t));
