@@ -25,20 +25,20 @@ function maxNums(arr) {
     right = n - 1,
     firstPos = 0;
   while (left <= right) {
-    let mid = Math.ceil((left + right) / 2); //mid is 4 now
+    let mid = Math.floor((left + right) / 2); //mid is 4 now
     //arr[mid] is 1
     if (arr[mid] > 0) {
-      firstPos = mid; //firstPos is 4 now
-      right = mid - 1; //right is 3 now
+      firstPos = mid;
+      right = mid - 1;
     } else {
-      left = mid + 1; //left is 5 now
+      left = mid + 1;
     }
   }
 
   (left = 0), (right = n - 1), (lastNeg = -1);
 
   while (left <= right) {
-    let mid = Math.ceil((left + right) / 2); //mid is 4 now
+    let mid = Math.floor((left + right) / 2); //mid is 4 now
     if (arr[mid] < 0) {
       lastNeg = mid;
       left = mid + 1;
@@ -52,6 +52,6 @@ function maxNums(arr) {
   return Math.max(posCount, negCount);
 }
 
-arr = [-3, -2, -1, 0, 1, 2, 3, 4];
+arr = [-3, -2, -1, 0, 1, 2];
 
 console.log(maxNums(arr));
